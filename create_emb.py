@@ -7,10 +7,6 @@ import logging
 #Load pre-trained model tokenizer (vocabulary)
 tokenizer = BertTokenizer.from_pretrained('/gpfs/u/home/HPDM/HPDMrawt/scratch/ptl_sample/bert-base-uncased')
 
-#text = "I like Python"
-
-#basepath = "/gpfs/u/home/HPDM/HPDMrawt/scratch/ptl_sample/pts/2006-03-03_879635_10-K/"
-
 basepath1 = "/gpfs/u/home/HPDM/HPDMrawt/scratch/ptl_sample/pts/"
 
 basepath2 = "/gpfs/u/home/HPDM/HPDMrawt/scratch/ptl_sample/all_cik_year_roa_scaled.csv"
@@ -30,12 +26,10 @@ y_train_list = []
 y_test_list = []
 
 for pt in pts_list:
-    #print("pt: ", pt)
     
     cik = pt.split("_")[1]
     year = pt.split("_")[0].split("-")[0]
     cik_year = cik + "_" + year
-    #print("cik_year: ", cik_year)
 
     if year in years_list:
         print("TRAIN DATASET")
@@ -47,7 +41,6 @@ for pt in pts_list:
             y_train_list.append(cik_year_dict[cik_year])
 
             sent_list = sorted(os.listdir(basepath), key=lambda x: x.split("_")[-4])
-            #print(sent_list)    
 
             all_sent_embedding_t = []
 
@@ -119,4 +112,3 @@ print(X_train.shape, y_train.shape)
 i = years_list[-1]
 
 torch.save(X_train, "X_mean_max_" + str(i) + ".pt")
-#torch.save(y_train, "y_" + str(i) + ".pt")
