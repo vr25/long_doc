@@ -6,6 +6,7 @@ Code and data for "On using Hierarchical Contextual Document Embedding using BER
 ## Prerequisites
 This code is written in python. To use it you will need:
 - Python 3.6
+- PyTorch [PyTorch](https://pytorch.org/)
 - A recent version of [scikit-learn](https://scikit-learn.org/)
 - A recent version of [Numpy](http://www.numpy.org)
 - A recent version of [NLTK](http://www.nltk.org)
