@@ -1,7 +1,7 @@
-On using Hierarchical Contextual Document Embedding using BERT for Long Text Regression on MD&A disclosure
+Hierarchical Contextual Document Embeddings for Long Financial Text Regression
 ===============
 
-Code and data for "On using Hierarchical Contextual Document Embedding using BERT for Long Text Regression on MD&A disclosure"
+Code and data for "Hierarchical Contextual Document Embeddings for Long Financial Text Regression"
 
 ## Prerequisites
 This code is written in python. To use it you will need:
