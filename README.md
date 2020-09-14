@@ -18,3 +18,5 @@ We provide all the document embeddings [sum, max, mean, mean_max, max_mean, conc
 We also provide the script ```create_emb.py``` to extract the above embeddings.
 
 Additionally, we used ```extract_all_layers.py``` on our text documents to extract all 12 layers' hidden weights.
+
+```data_2436.csv``` contains tokenized text for different features such as ```words```, ```sentiment_words``` and ```syntactically_expanded_sentiment_words```. This data file can be found at [Zenodo](https://zenodo.org/record/4029239#.X1-r5HXNY5k) 
